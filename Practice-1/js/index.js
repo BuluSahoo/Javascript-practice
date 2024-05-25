@@ -10,11 +10,18 @@ function signup(event) {
   console.log(user);
 
   const model = document.getElementById("model");
+  const modelBody = document.getElementById("model-body");
 
   model.style.display = "flex";
+  model.className = "animate__animated animate__fadeIn";
+  modelBody.className = "animate__animated animate__zoomIn animate__faster";
 }
 
 function closeModal() {
-    const model = document.getElementById("model");
-    model.style.display = "none";
+  const model = document.getElementById("model");
+  const modelBody = document.getElementById("model-body");
+
+  // model.style.display = "none";
+  model.className = "animate__animated animate__fadeOut";
+  modelBody.className = "animate__animated animate__zoomOut animate__faster";
 }
