@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Calculator/index.css" />
+    <script src="/Calculator/index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Calculator</h1>
+      <input type="text" placeholder="Calculate..." id="input-box" readonly />
+      <div id="calc-body">
+        <button class="calc-btn" onclick="calculate(`(`)">(</button>
+        <button class="calc-btn" onclick="calculate(`)`)">)</button>
+        <button class="calc-btn" onclick="backspace('%')">
+          <i class="material-icons">&#xe14a;</i>
+        </button>
+        <button class="calc-btn" onclick="clearInput()">AC</button>
+
+        <button class="calc-btn" onclick="calculate(7)">7</button>
+        <button class="calc-btn" onclick="calculate(8)">8</button>
+        <button class="calc-btn" onclick="calculate(9)">9</button>
+        <button class="calc-btn" onclick="calculate('/')">/</button>
+
+        <button class="calc-btn" onclick="calculate(4)">4</button>
+        <button class="calc-btn" onclick="calculate(5)">5</button>
+        <button class="calc-btn" onclick="calculate(6)">6</button>
+        <button class="calc-btn" onclick="calculate('*')">*</button>
+
+        <button class="calc-btn" onclick="calculate(1)">1</button>
+        <button class="calc-btn" onclick="calculate(2)">2</button>
+        <button class="calc-btn" onclick="calculate(3)">3</button>
+        <button class="calc-btn" onclick="calculate('+')">+</button>
+
+        <button class="calc-btn" onclick="calculate(0)">0</button>
+        <button class="calc-btn" onclick="calculate('.')">.</button>
+        <button class="calc-btn" onclick="evaluateResult()">=</button>
+        <button class="calc-btn" onclick="calculate('-')">-</button>
+      </div>
+    </div>
+  </body>
+</html>
