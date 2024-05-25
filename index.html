@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="/js/index.js"></script>
+  </head>
+  <body onclick="closeModal()">
+    <div id="container">
+      <div
+        id="card"
+        class="animate__animated animate__fadeInDown animate__faster"
+      >
+        <h1>Register Now</h1>
+        <form
+          id="signup"
+          autocomplete="off"
+          onsubmit="signup(event)"
+          name="register"
+        >
+          <input
+            type="text"
+            value="Bulu"
+            placeholder="Firstname"
+            required="true"
+            name="firstname"
+          />
+          <input
+            type="text"
+            value="Sahoo"
+            placeholder="Lastname"
+            required="true"
+            name="lastname"
+          />
+          <input
+            type="email"
+            value="bulusahoo@gmail.com"
+            placeholder="example@gmail.com"
+            required="true"
+            name="email"
+          />
+          <input
+            type="password"
+            value="1234"
+            placeholder="password"
+            required="true"
+            name="password"
+          />
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="model" class="animate__animated animate__fadeIn" >
+        <div id="model-body" class="animate__animated animate__zoomIn animate__faster">
+            <button id="close-btn" onclick="closeModal()">
+                <i class="fa fa-times-circle"></i>
+            </button>
+            <i id="check-icon" class="fa fa-check-circle"></i>
+            <h1>Signup Successfull !</h1>
+            
+        </div>
+    </div>
+  </body>
+</html>
