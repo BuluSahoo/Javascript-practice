@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate_Style</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/Animate.style-clone/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="section">
+        <h1 id="title">Animate.css</h1>
+        <p id="sub-title">Just-add-water CSS animations</p>
+      </div>
+      <div id="sidebar">
+        <div class="toggle" >
+          <label class="switch" >
+            <input type="checkbox" checked  onchange="theme()"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="animate-header">
+          <h2>Attention seekers</h2>
+          <div class="btn-box">
+            <button onclick="animator('animate__animated animate__bounce')">
+              bounce
+            </button>
+            <button onclick="animator('animate__animated animate__flash')">
+              flash
+            </button>
+            <button onclick="animator('animate__animated animate__pulse')">
+              pulse
+            </button>
+            <button onclick="animator('animate__animated animate__rubberBand')">
+              rubberBand
+            </button>
+            <button onclick="animator('animate__animated animate__shakeX')">
+              shakeX
+            </button>
+            <button onclick="animator('animate__animated animate__shakeY')">
+              shakeY
+            </button>
+            <button onclick="animator('animate__animated animate__headShake')">
+              headShake
+            </button>
+            <button onclick="animator('animate__animated animate__swing')">
+              swing
+            </button>
+            <button onclick="animator('animate__animated animate__tada')">
+              tada
+            </button>
+            <button onclick="animator('animate__animated animate__wobble')">
+              wobble
+            </button>
+            <button onclick="animator('animate__animated animate__jello')">
+              jello
+            </button>
+            <button onclick="animator('animate__animated animate__heartBeat')">
+              heartBeat
+            </button>
+          </div>
+        </div>
+        <div class="animate-header">
+          <h2>Back entrances</h2>
+          <div class="btn-box">
+            <button onclick="animator('animate__animated animate__backInDown')">
+              backInDown
+            </button>
+            <button onclick="animator('animate__animated animate__backInLeft')">
+              backInLeft
+            </button>
+            <button
+              onclick="animator('animate__animated animate__backInRight')"
+            >
+              backInRight
+            </button>
+            <button onclick="animator('animate__animated animate__backInUp')">
+              backInUp
+            </button>
+          </div>
+        </div>
+        <div class="animate-header">
+          <h2>Back exit</h2>
+          <div class="btn-box">
+            <button
+              onclick="animator('animate__animated animate__backOutDown')"
+            >
+              backOutDown
+            </button>
+            <button
+              onclick="animator('animate__animated animate__backOutLeft')"
+            >
+              backOutLeft
+            </button>
+            <button
+              onclick="animator('animate__animated animate__backOutRight')"
+            >
+              backOutRight
+            </button>
+            <button onclick="animator('animate__animated animate__backOutUp')">
+              backOutUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Animate.style-clone/index.js"></script>
+  </body>
+</html>
